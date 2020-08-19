@@ -7,9 +7,7 @@
   - Live search ketika mencari
   - Min. 3 huruf
   - Search by title
+  - Status "sedang mencari"
 
 ### Bonus Features :
   - Total hasil pencarian
-
-### Pending Features :
-  - Status "sedang mencari"
