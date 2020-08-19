@@ -1,0 +1,26 @@
+{
+  "name": "vue-gallery",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "npx tailwindcss build styles.css -o assets/css/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/musfirotus/vue-gallery.git"
+  },
+  "author": "Musfirotus",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/musfirotus/vue-gallery/issues"
+  },
+  "homepage": "https://github.com/musfirotus/vue-gallery#readme",
+  "dependencies": {
+    "autoprefixer": "^9.8.6",
+    "tailwindcss": "^1.7.1",
+    "v-gallery": "^1.2.4",
+    "vue-gallery-slideshow": "^1.5.0"
+  }
+}
