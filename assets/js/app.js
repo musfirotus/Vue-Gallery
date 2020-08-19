@@ -2,14 +2,18 @@ new Vue({
   el: '#app',
   computed: {
     searchData() {
-        return this.data.filter(e => {
+          return this.data.filter(e => {
             return e.title.toLowerCase().includes(this.cari.toLowerCase())
-        })
+          })
     }
   },
   watch: {
     cari: function() {
-      this.message = `Total gambar: ${this.searchData.length}`
+      if (this.cari.length >= 3 || this.cari.length == 0) {
+        this.message = `Total gambar: ${this.searchData.length}`
+      } else if(this.cari.length == 2 || this.cari.length == 1){
+        this.message = `Min. 3 huruf!`
+      }
     }
   },
   data: {

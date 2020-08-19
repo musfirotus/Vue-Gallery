@@ -24,10 +24,11 @@
       </div>
       <div class="h-100 w-full flex items-center justify-center bg-teal-lightest font-sans">
         <div class="border border-purple-500 w-full bg-white shadow-md rounded pt-6 pb-8 mb-4">
-          <div v-if="searchData.length == 0" class="pb-0">
+          <div v-if="searchData.length == 0 || cari.length == 2 || cari.length == 1" class="pb-0">
             <h1 class="text-center">Data tidak ada!</h1>
           </div>
-          <div v-if="searchData.length != 0" class="grid grid-cols-3 grid-rows-3 gap-4">
+          
+          <div v-if="(searchData.length != 0 && cari.length >= 3 ) || cari.length == 0" class="grid grid-cols-3 grid-rows-3 gap-4">
             <div v-for="f in searchData">
               <div class="mx-4 rounded overflow-hidden shadow-lg">
                 <a v-bind:href="f.url">
