@@ -19,8 +19,6 @@
   "homepage": "https://github.com/musfirotus/vue-gallery#readme",
   "dependencies": {
     "autoprefixer": "^9.8.6",
-    "tailwindcss": "^1.7.1",
-    "v-gallery": "^1.2.4",
-    "vue-gallery-slideshow": "^1.5.0"
+    "tailwindcss": "^1.7.1"
   }
 }
