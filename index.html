@@ -8,10 +8,10 @@
   <title>Tailwind CSS Demo</title>
 </head>
 
-<body>
-  <div id="app" class="bg-blue-300">
-    <div class="container mx-auto pt-5">
-      <h1 class="text-center font-bold mb-5 text-5xl text-black">Photo Gallery</h1>
+<body class="bg-blue-300" style="background-image: url(./assets/bg5.jpg)">
+  <div id="app">
+    <div class="container mx-auto pt-5 z-0">
+      <h1 class="text-center font-bold mb-5 text-5xl text-black bg-blue-300">Photo Gallery</h1>
       <div class="h-100 w-full flex items-center justify-center bg-teal-lightest font-sans">
         <form class="w-full border border-purple-500 max-w-xs bg-white shadow-md rounded px-5 pt-5 pb-5 mb-4">
           <input v-model="cari" class="bg-white focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg py-2 px-4 block w-full appearance-none leading-normal" type="tex" placeholder="Lorem Ipsum">
@@ -28,7 +28,7 @@
             <h1 class="text-center">Data tidak ada!</h1>
           </div>
           
-          <div v-if="(searchData.length != 0 && cari.length >= 3 ) || cari.length == 0" class="grid grid-cols-3 grid-rows-3 gap-3">
+          <div v-if="(searchData.length != 0 && cari.length >= 3 ) || cari.length == 0" class="grid grid-cols-3 grid-rows-auto gap-3">
             <div v-for="f in searchData">
               <div class="mx-2 mb-auto rounded-b-full rounded-t-full bg-white overflow-hidden shadow-lg p-5 border border-purple-500 w-6xl  pt-4 pb-4">
                 <a v-bind:href="f.url" target="_blank">
